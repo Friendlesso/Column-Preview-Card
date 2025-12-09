@@ -16,9 +16,7 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: var(--background-color);
-  height: 100vh;
   margin: 1.5rem;
 }
 
@@ -32,6 +30,7 @@ p {
 a {
   font-family: 'Lexend Deca';
   font-weight: 400;
+  font-size: 14px;
   line-height: 150%;
 }
 

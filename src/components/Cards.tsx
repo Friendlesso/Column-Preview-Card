@@ -7,7 +7,7 @@ export function Cards() {
   const [hovered, setHovered] = useState<string | null>(null);
 
   return (
-    <section className='sm:flex-row flex flex-col justify-center items-center'>
+    <section className=' sm:flex-row flex flex-col justify-center items-center'>
       {cards.map(card => {
         return <Card
           key={card.title}

@@ -15,17 +15,17 @@ export function Card({ title, description, icon, color, textColor, hovered, setH
   const isHovered = hovered === title;
 
   return (
-    <article className={`card h-[33vh] sm:h-[60vh] sm:max-w-[30vw] sm:w-84 ${color} flex flex-col px-10 py-10 text-left`}>
+    <article className={`card sm:max-w-[30vw] sm:w-84 ${color} flex flex-col max-h-[70vh] sm:h-[550px] gap-10 px-8 py-8 text-left`}>
       <div>
         <img src={icon} alt="Card Icon" />
       </div>
-      <div>
+      <div className="flex flex-col mb-auto gap-4">
         <h3 className="text-3xl text-gray-100">{title.toUpperCase()}</h3>
         <p className="text-[#ffffffbf]">{description}</p>
       </div>
       <a
         href="#"
-        className={` ${isHovered ? 'border border-gray-100 text-white ' :  `bg-white ${textColor}`} box-border w-fit px-8 py-2 rounded-3xl  mt-auto transition-colors duration-150`}
+        className={` ${isHovered ? 'border border-gray-100 text-white ' :  `bg-white ${textColor}`} box-border w-fit px-6 py-2 rounded-3xl  transition-colors duration-150`}
         onMouseEnter={() => {
           setHovered(title);
         }}

@@ -6,7 +6,9 @@ function App() {
 
   return (
     <>
-      <Cards />
+      <div className='flex justify-center min-h-screen'>
+        <Cards />
+      </div>
     </>
   )
 }
